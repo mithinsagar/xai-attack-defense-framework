@@ -18,7 +18,9 @@ up to 91 percent while preserving prediction accuracy.
 GitHub: <https://github.com/mithinsagar>
 
 Course: Deep Learning 
+
 Programme: B.Tech Computer Science and Engineering Specialisation in Artificial Intelligence and Machine Learning
+
 Institution: Vellore Institute of Technology, Chennai
 
 Collaborators on the original technical report: Gokul Ram K, Kishore A G.
