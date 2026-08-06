@@ -1,0 +1,10 @@
+Dataset,Model,Accuracy,F1
+Phishing,Logistic,0.9999,0.9999
+Phishing,XGBoost,1.0000,1.0000
+Phishing,MLP,0.9945,0.9952
+IDS,Logistic,0.7159,0.6679
+IDS,XGBoost,0.8863,0.8543
+IDS,MLP,0.8643,0.8279
+Fraud,Logistic,0.9649,0.9652
+Fraud,XGBoost,0.9781,0.9780
+Fraud,MLP,0.8728,0.8835

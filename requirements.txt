@@ -1,0 +1,38 @@
+# =====================================================================
+# XAI Attack and Defense Framework - Python Requirements
+# Author : Mithin Sagar S  (https://github.com/mithinsagar)
+# =====================================================================
+
+# Core scientific stack
+numpy>=1.23
+pandas>=1.5
+scipy>=1.10
+scikit-learn>=1.2
+
+# Deep learning
+torch>=2.0
+torchvision>=0.15
+
+# Gradient boosting
+xgboost>=1.7
+
+# Explainability
+shap>=0.42
+lime>=0.2.0.1
+captum>=0.6
+
+# Visualization
+matplotlib>=3.6
+seaborn>=0.12
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65
+joblib>=1.2
+
+# Testing
+pytest>=7.2
+
+# Notebook environment (optional)
+jupyter>=1.0
+ipykernel>=6.20

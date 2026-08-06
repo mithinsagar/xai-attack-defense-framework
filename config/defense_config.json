@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "author": "Mithin Sagar S",
+    "github": "https://github.com/mithinsagar",
+    "description": "Defense hyperparameters and loss weights."
+  },
+  "defense1_stability": {
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "noise_sigma": 0.01,
+    "stability_weight": 0.1,
+    "architecture": "RobustMLP"
+  },
+  "defense2_adversarial": {
+    "epochs": 60,
+    "learning_rate": 0.001,
+    "noise_sigma": 0.05,
+    "adv_weight": 0.5,
+    "architecture": "RobustMLP_v2"
+  },
+  "defense3_explanation_reg": {
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "noise_sigma": 0.02,
+    "explain_weight": 0.2,
+    "ig_batch_size": 200,
+    "architecture": "RobustMLP_v2"
+  },
+  "defense4_hybrid": {
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "small_noise": 0.01,
+    "large_noise": 0.05,
+    "stability_weight": 0.2,
+    "adv_weight": 0.2,
+    "smooth_weight": 0.1,
+    "architecture": "RobustMLP_v2",
+    "note": "Best performing defense, ~91.1% drift reduction."
+  }
+}

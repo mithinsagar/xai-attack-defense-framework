@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "author": "Mithin Sagar S",
+    "github": "https://github.com/mithinsagar",
+    "description": "Attack hyperparameters."
+  },
+  "attack1_top_feature": {
+    "epsilon": 0.05,
+    "top_k": 3,
+    "description": "Perturb top-k SHAP features by +epsilon."
+  },
+  "attack2_prediction_stable": {
+    "epsilon": 0.10,
+    "low_k": 3,
+    "description": "Perturb bottom-k features by +epsilon, expect prediction unchanged."
+  },
+  "attack3_gradient": {
+    "epsilon": 0.05,
+    "top_k": 3,
+    "description": "Use neural network gradients to find optimal perturbation direction."
+  },
+  "attack4_targeted": {
+    "epsilon": 0.25,
+    "top_k": 5,
+    "description": "Aggressive targeted attack on top-k explanation features."
+  }
+}

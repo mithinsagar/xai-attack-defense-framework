@@ -1,0 +1,6 @@
+Defense,Drift,MaxDrift,Top5Drift,RankCorrDrift,ReductionPct
+Baseline,0.038795,0.182300,0.031100,0.000000,0.0
+defense1_stability,0.003960,0.019200,0.006400,0.104200,89.8
+defense2_adversarial,0.008447,0.024100,0.011800,0.132500,78.2
+defense3_explanation_reg,0.011453,0.031400,0.018200,0.156700,70.5
+defense4_hybrid,0.003462,0.014900,0.005800,0.087300,91.1

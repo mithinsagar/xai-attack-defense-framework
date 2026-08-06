@@ -1,0 +1,54 @@
+# =====================================================================
+# XAI Attack and Defense Framework - Runtime Settings
+# Author : Mithin Sagar S  (https://github.com/mithinsagar)
+# =====================================================================
+
+project:
+  name: "XAI Attack and Defense Framework"
+  version: "1.0.0"
+  author: "Mithin Sagar S"
+  github: "https://github.com/mithinsagar"
+
+paths:
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  base_models_dir: "models/base_models"
+  defense_models_dir: "models/defense_models"
+  scalers_dir: "models/scalers"
+  results_dir: "results"
+  figures_dir: "figures"
+  logs_dir: "logs"
+
+runtime:
+  random_seed: 42
+  test_size: 0.2
+  batch_size: 64
+  learning_rate: 0.001
+  use_cuda_if_available: true
+
+datasets:
+  - key: phishing
+    filename: PhiUSIIL_Phishing_URL_Dataset.csv
+    label_column: label
+    drop_columns:
+      - FILENAME
+      - URL
+      - Domain
+      - Title
+      - URLSimilarityIndex
+    source_url: "https://archive-beta.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset"
+  - key: ids
+    filename: cybersecurity_intrusion_data.csv
+    label_column: attack_detected
+    drop_columns:
+      - session_id
+    source_url: "https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset"
+  - key: fraud
+    filename: Fraudulent_online_shops_dataset.csv
+    label_column: Label
+    drop_columns:
+      - "Online shop URL"
+      - "Domain registration date"
+    source_url: "https://data.mendeley.com/datasets/m7xtkx7g5m/1"

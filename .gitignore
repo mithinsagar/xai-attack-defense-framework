@@ -1,0 +1,65 @@
+# =====================================================================
+# XAI Attack and Defense Framework - .gitignore
+# Author : Mithin Sagar S  (https://github.com/mithinsagar)
+# =====================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Model artefacts (usually too large for git)
+models/base_models/*.pt
+models/base_models/*.pkl
+models/defense_models/*.pt
+models/scaler_*.pkl
+*.pt
+*.pkl
+!models/**/.gitkeep
+
+# Raw data (never commit)
+data/raw/*
+!data/raw/.gitkeep
+*.csv
+!results/*.csv
+
+# Generated outputs
+figures/*.png
+!figures/.gitkeep
+logs/*.log
+!logs/.gitkeep
+
+# Numpy caches
+*.npy
+*.npz
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
