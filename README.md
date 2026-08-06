@@ -321,7 +321,7 @@ If you use this framework in your research, please cite:
   title  = {XAI Attack and Defense Framework with Few-Shot Learning},
   author = {Mithin Sagar S and Gokul Ram K and Kishore A G},
   year   = {2026},
-  note   = {B.Tech AI and DS, VIT Chennai. Deep Learning DA-3.},
+  note   = {B.Tech CSE AIML, VIT Chennai. Deep Learning},
   url    = {https://github.com/mithinsagar/xai-attack-defense-framework}
 }
 ```
