@@ -50,4 +50,4 @@ Python traceback.
 ## License
 
 By contributing you agree that your contributions are licensed under the
-MIT License (see `LICENSE`).
+Apache License, Version 2.0 (see `LICENSE`).

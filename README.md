@@ -330,5 +330,5 @@ If you use this framework in your research, please cite:
 
 ## License
 
-This project is released under the MIT License. See [`LICENSE`](LICENSE) for
-the full text. Copyright (c) 2026 Mithin Sagar S.
+This project is released under the Apache License, Version 2.0. See
+[`LICENSE`](LICENSE) for the full text. Copyright 2026 Mithin Sagar S.
