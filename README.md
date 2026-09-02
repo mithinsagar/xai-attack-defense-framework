@@ -137,7 +137,7 @@ xai-attack-defense-framework/
 ├── .gitignore
 ├── config.py
 ├── main.py
-├── config/                (settings.yaml, model/attack/defense configs)
+├── config_reference/      (settings.yaml, model/attack/defense configs)
 ├── data/                  (loader, preprocessor, dataset info)
 ├── models/                (Logistic, XGBoost, MLP, RobustMLP, FewShot encoder)
 ├── explainers/            (SHAP, LIME, IG, Permutation wrappers)
