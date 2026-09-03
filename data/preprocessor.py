@@ -24,6 +24,7 @@ from typing import List, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
+from pandas.api.types import is_numeric_dtype
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
@@ -66,8 +67,12 @@ def preprocess_dataset(
 
     feature_names = X.columns.tolist()
 
+    # pandas 3 infers a native "str" dtype (or StringDtype/ArrowDtype in
+    # other configurations) for plain string columns instead of the classic
+    # "object" dtype this check used to assume, so anything non-numeric needs
+    # factorising, not just columns literally typed "object".
     for col in X.columns:
-        if X[col].dtype == "object":
+        if not is_numeric_dtype(X[col]):
             X[col] = X[col].astype(str)
             X[col] = X[col].factorize()[0]
 
@@ -76,7 +81,7 @@ def preprocess_dataset(
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-    if encode_labels or y.dtype == "object":
+    if encode_labels or not is_numeric_dtype(y):
         le = LabelEncoder()
         y = le.fit_transform(y)
     else:
