@@ -229,6 +229,7 @@ subject to  f(x) = f(x + delta),   ||delta||_inf <= epsilon
 | 2 | Prediction-Stable Manipulation        | Bottom-3 SHAP features | 0.10    |
 | 3 | Gradient-Based Attack                 | Top-3 gradient features| 0.05    |
 | 4 | Targeted Explanation Attack           | Top-5 SHAP/IG features | 0.25    |
+| 5 | Iterative Gradient Attack (BIM/I-FGSM)| Top-3 gradient features| 0.15    |
 
 Observed attack strength ranking (mean drift, descending):
 

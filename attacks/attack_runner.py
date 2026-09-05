@@ -23,6 +23,7 @@ import shap
 
 import config
 from attacks.gradient_attack import GradientAttack
+from attacks.iterative_gradient_attack import IterativeGradientAttack
 from attacks.prediction_stable_attack import PredictionStableAttack
 from attacks.targeted_attack import TargetedAttack
 from attacks.top_feature_attack import TopFeatureAttack
@@ -85,6 +86,7 @@ def _run_for_mlp(key: str) -> List[Dict[str, Any]]:
         PredictionStableAttack(features),
         GradientAttack(features),
         TargetedAttack(features),
+        IterativeGradientAttack(features),
     ]
     rows: List[Dict[str, Any]] = []
     for atk in attacks:
