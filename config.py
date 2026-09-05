@@ -153,6 +153,10 @@ ATTACK_CONFIG = {
     "attack3_top_k": 3,
     "attack4_epsilon": 0.25,
     "attack4_top_k": 5,
+    "attack5_epsilon": 0.15,
+    "attack5_alpha": 0.03,
+    "attack5_steps": 5,
+    "attack5_top_k": 3,
 }
 
 
